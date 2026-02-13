@@ -1,0 +1,13 @@
+:root {
+    --primary: #cd0a0c;
+    --background: #ffffff; 
+    --theme: #ffffff;   
+    --input-bg: #ffffff;  
+    --second-panel: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

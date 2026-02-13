@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login with tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="min-h-screen bg-[--background] text-[--theme]">
+    <main>
+        <section class="flex relative w-screen h-screen justify-center items-center">
+            <div id="colorMode" class="group transition-all hover:scale-105 w-max p-3 gap-3 absolute bg-black top-8 right-6 rounded-md flex justify-center flex-row items-center cursor-pointer shadow-lg">
+                <img id="icon" src="img/Moon.svg" alt="moon icon" class="group-hover:rotate-12  group-hover:scale-[1.2] transition-transform w-5 h-5"> 
+                <div class="rounded-full h-2 w-2 bg-red-500 absolute top-1 right-1 animate-ping"></div>
+                <div class="rounded-full h-2 w-2 bg-red-500 absolute top-1 right-1"></div>                      
+            </div>
+            <div class="border border-white/10 shadow-2xl flex-col w-[90%] md:w-[400px] p-8 flex items-center bg-[--second-panel] rounded-xl">
+                <h1 class="font-semibold text-3xl self-start mb-8">Login</h1>
+                <form action="" class="w-full flex flex-col gap-4">
+                    <div class="flex flex-col gap-1">
+                        <label for="email" class="text-sm opacity-80">Email</label>
+                        <input type="email" id="email" placeholder="seu@email.com" 
+                            class="w-full h-12 p-3 bg-[--input-bg] border border-[--input-bg]/10 rounded-md focus:outline-none focus:border-[--primary] transition-colors text-white">
+                    </div>
+                    <div class="flex flex-col gap-1">
+                        <label for="password" class="text-sm opacity-80">Password</label>
+                        <input type="password" id="password" placeholder="Password" 
+                            class="w-full h-12 p-3 bg-[--input-bg] border border[--input-bg]/10 rounded-md focus:outline-none focus:border-[--primary] transition-colors text-white">
+                    </div>
+                    <button class="font-bold bg-[--primary] w-full h-12 mt-4 rounded-md text-white transition-all duration-200 hover:brightness-110 active:scale-95">
+                        Entrar
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
